@@ -1,0 +1,21 @@
+.hs-icon-panel {
+    // Is displayed as a table row to ensure the correct structure and the correct behavior
+    display: table-row;
+
+    .icon-block {
+        display: table-cell;
+        width: 30px;
+        padding: 0 10px 0 0;
+
+        .icon {
+            font-size: 24px !important; //change
+            color: #666;
+        }
+    }
+
+    .text-block {
+        display: table-cell;
+        vertical-align: middle;
+        color: #222222;
+    }
+}

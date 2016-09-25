@@ -1,0 +1,74 @@
+$active-color: #0099cc;
+$active-color-hover: #86cdef;
+$inactive-color: #95989a;
+$inactive-color-hover: #c6c6c6;
+
+.hs-calendar-button {
+    font-family: Roboto, Verdana, Arial, sans-serif;
+    height: 40px;
+    width: 40px;
+    border: 1px solid $inactive-color;
+    background: $inactive-color-hover;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        border: 1px solid $inactive-color-hover;
+        background: $inactive-color-hover;
+
+        .hs-calendar-button__header {
+            border-bottom: 1px solid $inactive-color-hover;
+        }
+        .hs-calendar-button__text {
+            color: $inactive-color-hover;
+        }
+    }
+
+    .hs-calendar-button__header {
+        height: 14px;
+        color: #fff;
+        font-size: 10px;
+        border-bottom: 1px solid $inactive-color;
+    }
+
+    .hs-calendar-button__text {
+        font-size: 15px;
+        height: 24px;
+        line-height: 24px;
+        color: $inactive-color;
+        background: #fff;
+    }
+
+    &.availability-add-new {
+        .hs-calendar-button__text {
+            font-size: 17px;
+        }
+    }
+}
+
+.hs-calendar-button--active {
+    border: 1px solid $active-color;
+    background: $active-color;
+
+    &:hover {
+        border: 1px solid $active-color-hover;
+        background: $active-color-hover;
+
+        .hs-calendar-button__header {
+            border-bottom: 1px solid $active-color-hover;
+        }
+
+        .hs-calendar-button__text {
+            color: $active-color-hover;
+        }
+    }
+
+    .hs-calendar-button__header {
+        border-bottom: 1px solid $active-color;
+    }
+    .hs-calendar-button__text {
+        color: $active-color;
+    }
+}
